@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Jika akses langsung ke localhost, jalankan redirect.php
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^ redirect.php [L]
